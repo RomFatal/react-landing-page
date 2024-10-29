@@ -17,7 +17,7 @@ const HomePage = () => {
           {
             items && Object.keys(sectionData).length !== 0 ?
               items.map((item, index) => (
-                <ContentSection key={index} data={sectionData[item.name]} />
+                <ContentSection key={index} data={sectionData[item.name]} item={item}/>
               )) : ""}
         </section>
       </div>
