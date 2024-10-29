@@ -1,0 +1,26 @@
+{
+  "title": "Sit et enim",
+  "colorHue": 184,
+  "icon": "icon-5",
+  "label": "Ut eos reprehenderit eius",
+  "description": "<p>Sed hic eum magnam ratione rerum. Soluta voluptatem et odit aut velit asperiores magni. Dignissimos omnis blanditiis sit dolor maiores a veniam ipsa.</p><p>Ad inventore repellendus. Omnis distinctio possimus officiis. Accusantium sapiente est et. Officiis animi perspiciatis modi est nemo est sed itaque ad. Quis temporibus rerum qui ratione explicabo. Quam molestiae voluptas molestias quia pariatur deleniti dolorem libero facere.</p>",
+  "heroLink": { "href": "#", "label": "Modi amet quis", "icon": "icon-1" },
+  "items": [
+    {
+      "title": "In pariatur et dolor",
+      "text": "<p>Consequuntur autem cupiditate praesentium laboriosam quia. Saepe est ex necessitatibus itaque omnis eos. Est omnis autem tempore voluptas. Velit voluptas commodi molestiae quasi libero voluptas. Eos est neque consequatur.</p><p>Sit temporibus nesciunt sed natus. Voluptates saepe facere dolorum. Vitae ut mollitia hic aut blanditiis aut unde. Qui sapiente iusto numquam est consequuntur recusandae vel. Ab voluptatibus odio fuga non numquam voluptatem maiores.</p><p>Quo hic possimus. Minus velit vitae odio explicabo voluptate eveniet ipsam. Sed non non odio vel architecto qui enim assumenda rem. Soluta beatae neque qui debitis dolorem. Soluta voluptatem possimus molestiae eos architecto voluptas cum ut recusandae.</p>"
+    },
+    {
+      "title": "Dolorum omnis soluta",
+      "text": "<p>Sint doloremque voluptates fugiat at est sequi voluptas. Ut qui corrupti facilis beatae. Labore optio enim. Repellendus totam laboriosam aspernatur explicabo aut explicabo. Magnam quis eligendi rerum doloribus nulla voluptatum ipsum temporibus quas.</p><p>Quia at delectus quia corrupti. Porro et laudantium corrupti est fugit accusamus officiis et. Voluptates cupiditate commodi pariatur. Odit aliquam nisi molestiae dicta ut laboriosam labore magnam temporibus.</p>"
+    },
+    {
+      "title": "Ut praesentium ducimus id",
+      "text": "<p>Tempore libero deserunt laudantium illum reiciendis nesciunt quo adipisci. Illum est assumenda aliquid dolor dolorem voluptas nulla qui. Amet iure delectus sit voluptas aut non et. Blanditiis ut est rem ut deleniti eius est nemo incidunt. Totam voluptate aut libero adipisci eaque.</p><p>Qui non nihil dolorem quam odio fugiat ut. Sapiente non voluptas incidunt ex blanditiis maiores. Numquam exercitationem debitis tenetur omnis in dolor.</p><p>Et totam ducimus qui. Qui quae fugiat enim sint. Officiis nulla unde distinctio ea voluptas quis. Nihil dolores quasi sit et tempore. Non mollitia eveniet cum rerum illum labore rerum architecto.</p>"
+    },
+    {
+      "title": "Harum eum odit omnis",
+      "text": "<p>Consequuntur autem cupiditate praesentium laboriosam quia. Saepe est ex necessitatibus itaque omnis eos. Est omnis autem tempore voluptas. Velit voluptas commodi molestiae quasi libero voluptas. Eos est neque consequatur.Tempore ullam et exercitationem harum id facere nobis. Voluptatum rerum doloribus doloremque voluptatem sit. Accusantium sint odio veritatis eum quo nihil. Velit temporibus consequatur molestiae.</p>"
+    }
+  ]
+}

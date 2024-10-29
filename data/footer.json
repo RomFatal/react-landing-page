@@ -1,0 +1,56 @@
+{
+  "intro": {
+    "title": "Eligendi illum et est voluptatem voluptas",
+    "text": "<p>Possimus porro impedit veritatis temporibus. Exercitationem excepturi nisi qui voluptates. Sit similique eum. Qui magni quia delectus molestiae amet nostrum aut enim et. </p><p><b>Voluptatum expedita officiis sint beatae delectus ullam. Sunt quia mollitia impedit qui totam soluta et aut.</b></p>",
+    "link": { "href": "#", "label": "In pariatur et dolor" }
+  },
+  "form": {
+    "name": "contact",
+    "title": "Ut culpa necessitatibus. Nesciunt et sit dignissimos quis debitis et sapiente. Facere qui minus laborum quod. Optio facere debitis ipsum.",
+    "fields": [
+      {
+        "type": "text",
+        "name": "Facere ipsa quod",
+        "size": "half"
+      },
+      {
+        "type": "text",
+        "name": "Neque sed quisquam",
+        "size": "half"
+      },
+      {
+        "type": "text",
+        "name": "Quod sunt enim optio",
+        "size": "half"
+      },
+      {
+        "type": "options",
+        "name": "Eius distinctio nobis",
+        "size": "half",
+        "layout": "select",
+        "options": [
+          { "value": 1, "label": "Est sunt officiis aliquam" },
+          { "value": 2, "label": "Ullam repellendus provident" },
+          { "value": 3, "label": "Et quasi quos sed odit" }
+        ]
+      },
+      {
+        "type": "options",
+        "name": "Dolores nostrum neque quas",
+        "size": "full",
+        "layout": "buttons",
+        "options": [
+          { "value": 1, "label": "Inventore quisquam" },
+          { "value": 2, "label": "Magni nemo autem" },
+          { "value": 3, "label": "Est voluptatem" }
+        ]
+      },
+      {
+        "type": "textarea",
+        "name": "Qui dolore quae sint dolorum",
+        "size": "full"
+      }
+    ],
+    "submitLabel": "Facere ipsa quod"
+  }
+}

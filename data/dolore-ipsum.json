@@ -1,0 +1,26 @@
+{
+  "title": "Dolore ipsum",
+  "colorHue": 198,
+  "icon": "icon-4",
+  "label": "Labore optio omnis",
+  "description": "<p>Cupiditate at praesentium. Modi quod illum vero vero est. Eius quis voluptas et voluptatem saepe ducimus dolore. Impedit architecto voluptate aut eius eos quaerat.</p><p>Et consequatur voluptate quos nihil. Et tempore sequi dolor earum voluptatum. Exercitationem ut accusamus. Distinctio animi et iusto sed. Blanditiis laudantium ea. Temporibus perspiciatis aperiam hic et molestiae.</p><p>Esse numquam assumenda ut iusto accusantium nostrum ratione nemo. Sunt corrupti voluptatum at rerum. Molestiae corporis sed cum est quaerat consequuntur beatae harum fuga. Iure aut eaque quia natus consequatur illum quis aut rerum. Omnis quis ut amet. Tempore ut illo cum voluptates et tenetur est.</p>",
+  "heroLink": { "href": "#", "label": "Ut autem et", "icon": "icon-1" },
+  "items": [
+    {
+      "title": "Sit quisquam commodi",
+      "text": "<p>Rem a nihil quo eaque voluptas saepe. Facilis voluptatibus odit labore necessitatibus eos repellat nemo eos. Provident itaque et tempora sed ipsum aspernatur expedita optio non. Occaecati unde odit rerum nulla voluptatem quisquam.</p><p>Nisi dolorem labore. Magnam harum molestiae libero repellendus qui rem ducimus ullam fuga. Veritatis perspiciatis quisquam corporis maxime nostrum consequuntur non consequatur aut.</p><p>Debitis est voluptatem a enim. Rerum a tenetur in quisquam sit. Assumenda omnis laborum iusto et ipsam quod occaecati. Veniam voluptas voluptatem aperiam corporis maxime blanditiis velit molestiae autem. Ex delectus cum consequatur expedita laborum omnis.</p>"
+    },
+    {
+      "title": "Mollitia voluptatem quisquam",
+      "text": "<p>Eos numquam ducimus provident libero odit accusantium optio repellat. Ab facilis qui quae est illo. Mollitia in aut nesciunt. Et consequuntur libero.</p>"
+    },
+    {
+      "title": "Ea sit illo",
+      "text": "<p>Dolores dolores vitae autem esse magni dolorem magni quia. Enim aut dolores quo qui voluptas aliquid accusantium. Suscipit voluptatem dolorem temporibus consequatur voluptatem ducimus et. Commodi culpa nihil iure et perferendis et autem placeat voluptatem. Distinctio placeat pariatur aut quia voluptates id et.</p><p>Consequatur voluptatem sunt. Doloremque quod earum quasi sunt quae excepturi. Cum eos quasi hic commodi ut sunt consectetur. Accusamus commodi et veniam qui doloremque dolore ipsum qui reprehenderit.</p><p>Consequatur soluta quae maiores laboriosam occaecati sed ut reiciendis. Dolores est aspernatur non voluptatum recusandae veniam debitis. Doloremque officia incidunt voluptatibus nulla.</p>"
+    },
+    {
+      "title": "Et beatae sit",
+      "text": "<p>Autem repellendus distinctio perferendis ut. Ut id enim voluptas ea. Dignissimos vero et. Delectus accusamus et est voluptatem quo. Est aliquid unde at quaerat soluta voluptate.</p><p>Dolores sed consequatur voluptatem. Repudiandae numquam in. Laudantium quas harum a iste sed sit sapiente aut sint. Neque sed totam similique laudantium. Similique illo et distinctio est voluptas vel quia. Quisquam reprehenderit et sed et et et dolorum et non.</p><p>Cupiditate sequi id sed atque mollitia dicta non saepe blanditiis. Maiores eius quam rerum velit. Voluptates qui odio laborum aut dolores ratione.</p>"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "title": "Ut ducimus",
+  "slug": "",
+  "content": {
+    "hero": {
+      "title": "Necessitatibus velit hic placeat molestiae.",
+      "subtitle": "Ut quam et praesentium magnam nihil dolorem aut. Qui et est ipsa unde commodi. In distinctio numquam placeat quam. Repellendus saepe consequatur animi voluptatem nam quaerat quia. Sunt a hic corporis commodi at debitis deleniti corporis.",
+      "links": [
+        {
+          "primary": true,
+          "href": "#",
+          "label": "Magni ratione"
+        },
+        {
+          "primary": false,
+          "href": "#",
+          "label": "Modi amet quis",
+          "icon": "icon-1"
+        }
+      ]
+    },
+    "items": [
+      {
+        "name": "repudiandae",
+        "linkLabel": "Molestiae architecto odit quas dicta nobis",
+        "layout": "regular"
+      },
+      {
+        "name": "sit-at-enim",
+        "linkLabel": "Omnis voluptas rerum fuga maiores rem in",
+        "layout": "regular"
+      },
+      {
+        "name": "dolore-ipsum",
+        "linkLabel": "Voluptatem repudiandae et",
+        "layout": "fullColor",
+        "additionalLinks": [
+          { "href": "#", "label": "Et aperiam et est", "icon": "icon-6" },
+          { "href": "#", "label": "Minima aut omnis", "icon": "icon-7" }
+        ]
+      },
+      {
+        "name": "praesentium-aspernatur",
+        "linkLabel": "Consequatur rerum molestiae",
+        "layout": "regular"
+      }
+    ]
+  }
+}
