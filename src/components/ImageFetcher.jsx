@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 
-const ImageFetcher = ({ imgData }) => {
+const ImageFetcher = ({ imgData, className }) => {
   const [smallImageUrl, setSmallImageUrl] = useState('');
   const [largeImageUrl, setLargeImageUrl] = useState('');
   const [loading, setLoading] = useState(true);
@@ -54,7 +54,8 @@ const ImageFetcher = ({ imgData }) => {
         <img
           src={smallImageUrl} // Fallback for browsers that don't support srcSet
           srcSet={`${smallImageUrl} 1000w, ${largeImageUrl} 1200w`}
-          sizes="(max-width: 600px) 500px, 800px" // Specify the display sizes based on device width
+          className={className}
+          // sizes="(max-width: 600px) 500px, 800px" // Specify the display sizes based on device width
           alt={`${imgData.title} `}
         />
       )}
