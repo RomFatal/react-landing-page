@@ -5,9 +5,13 @@ import ContentSection from '../components/contentSection/contentSection.componen
 import Footer from '../components/footer/footer.component';
 import useHome from "../hooks/useHome";
 import useSections from "../hooks/useSections";
+import useFooter from "../hooks/useFooter";
 const HomePage = () => {
+  
   const { hero, items } = useHome();
   const sectionData = useSections(items);
+  const footerData = useFooter();
+
   return (
     <div className="App">
       <Header />
@@ -21,7 +25,7 @@ const HomePage = () => {
               )) : ""}
         </section>
       </div>
-      <Footer />
+      <Footer data={footerData}/>
     </div>
   );
 }
