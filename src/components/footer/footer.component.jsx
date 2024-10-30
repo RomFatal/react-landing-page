@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 import './footer.style.scss';
+import { ReactComponent as ArrowSelect} from '../../assets/arrow-select.svg';
+import { ReactComponent as ArrowRight} from '../../assets/arrow-right.svg';
 
 const Footer = ({ data }) => {
 
@@ -37,6 +39,8 @@ const Footer = ({ data }) => {
                     {intro.link.label}
                 </Link>
             </div>
+            <ArrowSelect />
+            <ArrowRight fill='orange' />
 
             {/* Form Section */}
             <div className="footer-form">

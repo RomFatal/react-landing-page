@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
-import ImageFetcher from '../ImageFetcher';
+import ImageFetcher from '../imageFetcher';
+import DynamicIcon from '../dynamicIcon.componenet';
 
 const ContentSection = ({ data, item }) => {
   const { title, description, colorHue, icon, label } = data ?? {};
@@ -15,13 +16,14 @@ const ContentSection = ({ data, item }) => {
   const imgPath = `/img/${name.replace(/\s+/g, '-').toLowerCase()}`
   const imgData = {
     title,
-    smallImageUrl: imgPath + '-small.jpg', // Generate the image URL based on the title
-    largeImageUrl: imgPath + '-large.jpg', // Generate the image URL based on the title
+    smallImageUrl: imgPath + '-small.jpg',
+    largeImageUrl: imgPath + '-large.jpg',
   };
 
   return (
     <section className="content-section" style={{ backgroundColor }}>
       <div className="content-section-header">
+        {<DynamicIcon iconName={icon} className={`section-icon ${icon}`} />}
         {icon && <i className={`section-icon ${icon}`}></i>}
         <h2>{title}</h2>
         {label && <p className="section-label">{label}</p>}
@@ -29,9 +31,10 @@ const ContentSection = ({ data, item }) => {
           <p className="section-description" dangerouslySetInnerHTML={{ __html: sanitizedDescription }} />
         )}
       </div>
-
-      <ImageFetcher imgData={imgData} />
-
+      <div className='img-container'>
+        <ImageFetcher imgData={imgData} />
+        {<DynamicIcon iconName={icon} className={`section-icon ${icon}`} />}
+      </div>
       {linkLabel && (
         <Link to="/" className="link-label-text">{linkLabel}</Link>
       )}
@@ -42,6 +45,7 @@ const ContentSection = ({ data, item }) => {
           {additionalLinks.map((link, index) => (
             <li key={index}>
               <Link to={link.href} className={link.icon ? `link-icon ${link.icon}` : ''}>
+              {<DynamicIcon iconName={link.icon} className={`section-icon ${link.icon}`} />}
                 {link.label}
               </Link>
             </li>
