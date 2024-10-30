@@ -5,7 +5,7 @@ import './header.style.scss'
 
 
 const Header = () => (
-    <div className="header">
+    <div className="header absolute left-[20%] top-[10%]">
          <Link to="/">
             <Logo className="logo" />
         </Link>

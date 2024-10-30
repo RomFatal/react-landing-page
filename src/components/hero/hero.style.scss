@@ -1,0 +1,23 @@
+.hero-img {
+  width: 100vw; /* Full viewport width */
+  max-height: 920px; /* Max height of 920px */
+  height: 85vh; /* Full viewport height */
+  object-fit: cover; /* Keeps image aspect ratio and covers area */
+}
+
+.hero-title {
+  font-family: Merriweather;
+  font-size: 64px;
+  font-weight: 700;
+  line-height: 67.84px;
+}
+
+.hero-label {
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 22.99px;
+}
+
+.hero-link:not(:first-of-type) {
+    margin-left: 20px;
+  }

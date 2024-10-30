@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 
-const DynamicIcon = ({ color, iconName, ...props }) => {
+const DynamicIcon = ({ color, iconName, className, ...props }) => {
   const [iconSrc, setIconSrc] = useState(null);
 
   useEffect(() => {
@@ -20,7 +20,7 @@ const DynamicIcon = ({ color, iconName, ...props }) => {
 
   if (!iconSrc) return null;
 
-  return <img src={iconSrc} fill='red' alt={`${iconName} icon`}  />;
+  return <img src={iconSrc} className={className} alt={`${iconName} icon`}  />;
 };
 
 export default DynamicIcon;
