@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import DynamicIcon from '../dynamicIcon.componenet';
+import DynamicIcon from '../dynamicIcon.component';
 import './nav.style.scss'
 const Nav = ({ sectionsData, items }) => {
   const [hoveredIndex, setHoveredIndex] = useState(null);

@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
-import ImageFetcher from '../imageFetcher';
-import DynamicIcon from '../dynamicIcon.componenet';
+import ImageFetcher from '../imageFetcher.component';
+import DynamicIcon from '../dynamicIcon.component';
 
 const ContentSection = ({ data, item }) => {
   const { title, description, colorHue, icon, label } = data ?? {};

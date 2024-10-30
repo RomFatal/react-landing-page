@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom'
-import DynamicIcon from '../dynamicIcon.componenet';
+import DynamicIcon from '../dynamicIcon.component';
 import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 import './button.style.scss'
 const Button = ({ label, icon: Icon, href, className, color, hoverColor, ...props }) => {

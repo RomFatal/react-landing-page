@@ -1,7 +1,6 @@
 import React from 'react';
-import ImageFetcher from '../imageFetcher';
+import ImageFetcher from '../imageFetcher.component';
 import { ReactComponent as ArrowScroll } from '../../assets/arrow-scroll.svg';
-// import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 import Button from '../button/button.component';
 import './hero.style.scss'
 import { Link } from 'react-router-dom';
