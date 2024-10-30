@@ -4,6 +4,7 @@ import { ReactComponent as ArrowScroll } from '../../assets/arrow-scroll.svg';
 // import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
 import Button from '../button/button.component';
 import './hero.style.scss'
+import { Link } from 'react-router-dom';
 const Hero = ({ data }) => {
 
     const { title, subtitle, links } = data ?? "";
@@ -19,7 +20,7 @@ const Hero = ({ data }) => {
 
             <div className="hero-content absolute left-[20%] top-[25%] text-left max-w-[554px]">
                 <h1 className="hero-title">{title}</h1>
-                <p className="hero-label">{subtitle}</p>
+                <p className="hero-label mt-8">{subtitle}</p>
 
                 <div className="hero-links mt-10 ">
 
@@ -27,14 +28,18 @@ const Hero = ({ data }) => {
                         links ?
                             links.map((link, index) => (
                                 <div key={index} className="hero-link inline ">
-                                    <Button label={link.label} href={link.href} className={`hero-link ${link.primary ? "primary" : "secondary"}`} icon={link.icon} color='#FF9900' />
+                                    <Button label={link.label} href={link.href} className={`hero-link ${link.primary ? "primary" : "secondary"}`} icon={link.icon} color='#FF9900' hoverColor='#ED8E00' />
                                 </div>
                             )) : ""
                     }
                 </div>
-                <ArrowScroll className="mt-10" />
-                <ArrowScroll />
-                <ArrowScroll />
+                <div className='arrows-container inline-block mt-36'>
+                    <Link className='arrows-scroll'>
+                        <ArrowScroll className="" />
+                        <ArrowScroll />
+                        <ArrowScroll />
+                    </Link>
+                </div>
             </div>
         </section>
     );

@@ -3,6 +3,7 @@
   max-height: 920px; /* Max height of 920px */
   height: 85vh; /* Full viewport height */
   object-fit: cover; /* Keeps image aspect ratio and covers area */
+  // opacity: 82%;
 }
 
 .hero-title {
@@ -19,5 +20,30 @@
 }
 
 .hero-link:not(:first-of-type) {
-    margin-left: 20px;
-  }
+  margin-left: 20px;
+}
+.arrows-container {
+  background-color: #414b56;
+  border-radius: 20px;
+  height: 40px;
+  width: 42px;
+}
+.arrows-scroll {
+  position: relative;
+  top: 15px;
+  left: 11px;
+}
+.arrows-scroll > svg {
+  stroke: #ffffff;
+  position: relative;
+  margin-top: -3px;
+}
+.arrows-scroll:hover > svg {
+  stroke: #ff9900;
+}
+.arrows-scroll:hover > svg:first-child {
+  visibility: hidden;
+}
+.arrows-scroll:hover > svg:last-child {
+  visibility: hidden;
+}
