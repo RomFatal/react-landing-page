@@ -50,7 +50,6 @@ input::placeholder {
 
 .radio-toolbar {
   padding: 8px 16px;
-
   font-weight: 700;
   margin-top: 1em;
   border-radius: 24px;
@@ -108,5 +107,13 @@ textarea {
 
   button {
     width: 100%;
+  }
+
+  .radio-toolbar {
+    display: block;
+  }
+  .radio-toolbar label{
+    display: block;
+    text-align: center;
   }
 }
