@@ -17,7 +17,7 @@ const Hero = ({ data }) => {
         <section className="hero">
             <ImageFetcher imgData={imgData} className="hero-img" />
 
-            <div className="hero-content absolute left-[20%] top-[25%] text-left max-w-[554px]">
+            <div className="hero-content absolute left-[20%] top-[20%] text-left max-w-[554px]">
                 <h1 className="hero-title">{title}</h1>
                 <p className="hero-label mt-8">{subtitle}</p>
 
@@ -32,7 +32,7 @@ const Hero = ({ data }) => {
                             )) : ""
                     }
                 </div>
-                <div className='arrows-container inline-block mt-36'>
+                <div className='arrows-container inline-block mt-28'>
                     <Link className='arrows-scroll'>
                         <ArrowScroll className="" />
                         <ArrowScroll />
