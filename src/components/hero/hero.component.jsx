@@ -8,15 +8,10 @@ const Hero = ({ data }) => {
 
     const { title, subtitle, links } = data ?? "";
     const imgPath = '/img/home'
-    const imgData = {
-        title,
-        smallImageUrl: imgPath + '-small.jpg',
-        largeImageUrl: imgPath + '-large.jpg',
-    };
     return (
         <section className="hero">
-            <ImageFetcher imgData={imgData} className="hero-img" />
-            <ImageFetcher imgData={imgData} className="hero-img" />
+            <ImageFetcher imgUrl={`${imgPath}-small.jpg`} className="hero-img hero-img-small hidden" />
+            <ImageFetcher imgUrl={`${imgPath}-large.jpg`} className="hero-img" />
 
             <div className="hero-content absolute left-[20%] top-[20%] text-left max-w-[554px]">
                 <h1 className="hero-title">{title}</h1>

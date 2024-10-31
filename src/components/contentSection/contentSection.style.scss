@@ -56,6 +56,7 @@
   font-family: Merriweather;
   font-weight: 700;
   font-size: 32px;
+  display: block;
 }
 .link-label {
   font-family: Merriweather;
@@ -90,6 +91,49 @@ li {
   z-index: 10;
   width: 40em;
   height: 40em;
-  //   border-radius: 1514.71px 0px 0px 0px;
-  //   opacity: 0.06px;
+}
+
+@media (max-width: 600px) {
+  .img-container {
+    left: 0;
+    width: 100vm;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100vw;
+  }
+  .regular .circle-img {
+    border-radius: 0px;
+    // width: 100vm;
+    width: 50em;
+
+    // max-height: 400px;
+  }
+  .img-container .icon-container {
+    border-radius: 99px 0px 0px 99px;
+    top: 24px;
+    right: 0;
+  }
+  .section-content {
+    margin-top: 275px;
+  }
+  .regular,
+  .section-content {
+    width: 95%;
+  }
+
+  .regular-right .section-content {
+    margin-left: 0em;
+  }
+  .fullColor {
+    text-align: left;
+  }
+
+  .fullColor .img-container img {
+    display: none;
+  }
+  .additional-links li,
+  li a {
+    display: block;
+    margin-top: 1em;
+  }
 }
