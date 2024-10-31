@@ -3,13 +3,15 @@ import { Link } from 'react-router-dom';
 import DOMPurify from 'dompurify';
 import ImageFetcher from '../imageFetcher.component';
 import DynamicIcon from '../dynamicIcon.component';
+import { ReactComponent as ArrowRight } from '../../assets/arrow-right.svg';
+import './contentSection.style.scss'
 
 const ContentSection = ({ data, item }) => {
   const { title, description, colorHue, icon, label } = data ?? {};
-  const { name, linkLabel, additionalLinks } = item ?? {};
+  const { name, linkLabel, layout, additionalLinks } = item ?? {};
 
-  // Convert color hue to HSL for background color styling
-  const backgroundColor = colorHue ? `hsl(${colorHue}, 60%, 90%)` : '#f9f9f9';
+  const colorHsl = `hsl(${colorHue}, 95%, 45%)`;
+  const backgroundcolor = `hsl(${colorHue}, 50%, 90%)`;
 
   // Sanitize the description to prevent XSS attacks
   const sanitizedDescription = description ? DOMPurify.sanitize(description) : '';
@@ -21,37 +23,47 @@ const ContentSection = ({ data, item }) => {
   };
 
   return (
-    <section className="content-section" style={{ backgroundColor }}>
-      <div className="content-section-header">
-        {<DynamicIcon iconName={icon} className={`section-icon ${icon}`} />}
-        {icon && <i className={`section-icon ${icon}`}></i>}
-        <h2>{title}</h2>
-        {label && <p className="section-label">{label}</p>}
+    <section className={`section ${layout}`}>
+      <div className="section-content inline-block">
+        <div className='icon-container inline-block' style={{ backgroundColor: `${backgroundcolor}` }}>
+          {<DynamicIcon iconName={icon} className={`w-[50] p-2 inline ${icon}`} />}
+        </div>
+        <div className="inline-block ml-3">
+          {label && <p className="section-label">{label}</p>}
+          <h2 style={{ color: `${colorHsl}` }}>{title}</h2>
+        </div>
         {sanitizedDescription && (
-          <p className="section-description" dangerouslySetInnerHTML={{ __html: sanitizedDescription }} />
+          <p className="section-description mt-2" dangerouslySetInnerHTML={{ __html: sanitizedDescription }} />
         )}
+        <div>
+          {linkLabel && (
+            <div>
+              <Link to="/" className="link-label pr-2" style={{ color: `${colorHsl}` }}>{linkLabel}</Link>
+              <ArrowRight fill={`${colorHsl}`} className='inline' />
+            </div>
+          )}
+          {/* Render additional links if they exist */}
+          {additionalLinks && additionalLinks.length > 0 && (
+            <ul className="additional-links">
+              {additionalLinks.map((link, index) => (
+                <li key={index}>
+                  <Link to={link.href} className={link.icon ? `link-icon ${link.icon}` : ''}>
+                    {<DynamicIcon iconName={link.icon} className={`${link.icon}`} />}
+                    {link.label}
+                  </Link>
+                </li>
+              ))}
+            </ul>
+          )}
+        </div>
       </div>
-      <div className='img-container'>
-        <ImageFetcher imgData={imgData} />
-        {<DynamicIcon iconName={icon} className={`section-icon ${icon}`} />}
-      </div>
-      {linkLabel && (
-        <Link to="/" className="link-label-text">{linkLabel}</Link>
-      )}
 
-      {/* Render additional links if they exist */}
-      {additionalLinks && additionalLinks.length > 0 && (
-        <ul className="additional-links">
-          {additionalLinks.map((link, index) => (
-            <li key={index}>
-              <Link to={link.href} className={link.icon ? `link-icon ${link.icon}` : ''}>
-              {<DynamicIcon iconName={link.icon} className={`section-icon ${link.icon}`} />}
-                {link.label}
-              </Link>
-            </li>
-          ))}
-        </ul>
-      )}
+      <div className='img-container inline'>
+        <ImageFetcher imgData={imgData} className="circle-img" />
+        <div className='icon-container inline-block' style={{ backgroundColor: `${backgroundcolor}` }}>
+        {<DynamicIcon iconName={icon} className={`section-icon w-[64px] ${icon}`} />}
+        </div>
+      </div>
     </section>
   );
 };
