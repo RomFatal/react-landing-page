@@ -26,7 +26,7 @@ const Hero = ({ data }) => {
                     {
                         links ?
                             links.map((link, index) => (
-                                <div key={index} className="hero-link inline ">
+                                <div key={index} className="hero-link inline">
                                     <Button label={link.label} href={link.href} className={`hero-link ${link.primary ? "primary" : "secondary"}`} icon={link.icon} color='#FF9900' hoverColor='#ED8E00' />
                                 </div>
                             )) : ""
