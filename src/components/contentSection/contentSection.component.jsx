@@ -57,7 +57,7 @@ const ContentSection = ({ data, item }) => {
               )}
             </div></div> : <div>
             {linkLabel && (
-              <div>
+              <div className='section-link'>
                 <Link to="/" className="link-label pr-2" style={{ color: `${colorHsl}` }}>{linkLabel}</Link>
                 <ArrowRight fill={`${colorHsl}`} className='inline' />
               </div>
