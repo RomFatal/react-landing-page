@@ -1,6 +1,12 @@
-// .header {
-//   position: sticky;
-//   top: 0;
-//   background-color: #ffffff;
-//   z-index: 1000;
-// }
+@media (max-width: 600px) {
+    .header{
+        width: 100%;
+        background-color: #00000033;
+        top:0;
+        left:0;
+    }
+    .logo{
+ margin: 1em 2em;
+    }
+  }
+  

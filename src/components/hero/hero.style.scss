@@ -46,3 +46,36 @@
 .arrows-scroll:hover > svg:last-child {
   visibility: hidden;
 }
+
+@media (max-width: 600px) {
+  /* Styles for phone viewport */
+  body {
+      font-size: 14px;
+      padding: 0 16px;
+  }
+
+.hero-content{
+  display: table;
+  width: 85%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero-link{
+  display: block;
+  // margin:0px !important;
+}
+.hero-link:not(:first-of-type) {
+  margin-left: 0px;
+  margin-top: 1em;
+}
+.arrows-container{
+  margin-top: 1em;
+  left: 50%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: transparent;
+}
+  /* Add additional styles as needed */
+}
